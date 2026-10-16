@@ -87,14 +87,18 @@ button{font-family:inherit;font-size:inherit;cursor:pointer}
 .nav a:hover,.nav a.active{color:var(--amber)}
 .nav a.nav-cta{background:var(--red);color:var(--white)}
 .nav a.nav-cta:hover{color:var(--white)}
-@media(min-width:960px){
-  .burger{display:none}
-  .nav{position:static;display:flex;flex-direction:row;border:0;background:transparent;margin-left:12px}
-  .nav a{padding:8px 12px;border:0;font-size:16px}
-  .nav a.nav-cta{border-radius:4px;padding:8px 14px}
-  .hphone{display:inline}
-}
 @media(min-width:640px){.hphone{display:inline}}
+@media(min-width:1100px){
+  :root{--header-h:72px}
+  .burger{display:none}
+  .header .wrap{gap:20px}
+  .nav{position:static;display:flex;flex-direction:row;align-items:center;border:0;background:transparent;margin:0 0 0 8px;order:2;gap:2px}
+  .nav a{padding:8px 11px;border:0;font-size:17px;white-space:nowrap;letter-spacing:.03em}
+  .nav a.nav-cta{border-radius:4px;padding:9px 16px;margin-left:6px}
+  .header-mid{order:3;gap:12px}
+  .hphone{display:none}
+}
+@media(min-width:1100px){.hphone{display:none}.status .st-long{display:none}.status .st-short{display:inline!important}.status{font-size:15px}}
 @media(max-width:420px){.status{font-size:13px;padding:5px 8px}.status .st-long{display:none}.wordmark{padding:5px 9px 5px 8px;gap:7px}.wordmark .mark{width:26px;height:26px}.wordmark .text{font-size:15px}.lang button{padding:6px 8px}.burger{width:38px}}
 @media(min-width:421px){.status .st-short{display:none}}
 
