@@ -24,12 +24,5 @@ pour l'instant ; pour le remplacer, mettre un `<img>` à l'intérieur du bloc `<
 
 ## Données fictives
 
-Prix, stock, avis et numéro de téléphone sont inventés pour la démo et signalés comme tels sur la page.
+Prix, stock et avis sont inventés pour la démo et signalés comme tels sur la page.
 Les produits de la recherche sont dans le tableau `PRODUCTS` en bas de `index.html`.
-
-## Police National
-
-Les fichiers `test-national-*.woff2` sont les versions d'essai de National (Klim). Elles ne contiennent que
-A–Z, a–z, 0–9 et la ponctuation de base : les lettres accentuées et le signe € sont affichés en Public Sans
-en attendant les fichiers sous licence. Pour passer à la version complète, remplacer les fichiers en gardant
-les mêmes noms, ou adapter les `@font-face` en haut de `index.html`.
